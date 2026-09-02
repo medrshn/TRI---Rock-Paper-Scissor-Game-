@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors | Battle Arena</title>
+    <link rel="stylesheet" href="rps.css">
+</head>
+
+<body>
+
+    <main class="game-container">
+
+        <header class="game-header">
+            <div class="trio">TRIØ</div>
+            <p id="player-welcome">WELCOME, PLAYER ⚡</p>
+        </header>
+
+        <section class="battle-section">
+
+           <div class="player-card" id="player-card">
+                <p class="player-label" id="player-name-display">PLAYER</p>
+
+                <div class="choice-display" id="player-choice">
+                  👺
+                </div>
+
+                <p class="score-label">SCORE</p>
+                <p class="score" id="player-score">0</p>
+           </div>
+
+            <div class="vs-container">
+                <span>VS</span>
+            </div>
+
+            <div class="player-card" id="computer-card">
+                <p class="player-label">DRSHN</p>
+
+                <div class="choice-display" id="computer-choice">
+                    👻
+                </div>
+
+                <p class="score-label">SCORE</p>
+                <p class="score" id="computer-score">0</p>
+            </div>
+        </section>
+
+        <section class="result-section">
+            <h2 id="game-result">MAKE YOUR MOVE</h2>
+            <div id="result-message">
+                Outplay the machine. Own the arena.
+            </div>
+        </section>
+
+        <section class="choice-section">
+            <h3>CHOOSE YOUR WEAPON</h3>
+          
+            <div class="choice-buttons">
+                <button
+                    class="choice-button"
+                    id="rock-button"
+                    data-choice="rock"
+                    type="button">
+                    <span class="choice-icon">✊</span>
+                    <span class="choice-name">ROCK</span>
+                </button>
+
+                <button
+                    class="choice-button"
+                    id="paper-button"
+                    data-choice="paper"
+                    type="button">
+                    <span class="choice-icon">✋</span>
+                    <span class="choice-name">PAPER</span>
+                </button>
+
+                <button
+                    class="choice-button"
+                    id="scissors-button"
+                    data-choice="scissors"
+                    type="button">
+                    <span class="choice-icon">✌️</span>
+                    <span class="choice-name">SCISSORS</span>
+                </button>
+            </div>
+        </section>
+
+        <section class="reset-section">
+            <button
+                id="reset-button"
+                class="reset-button"
+                type="button">
+                ↻ RESET GAME
+            </button>
+        </section>
+
+        <footer class="game-footer">
+            <p>PLAY SMART • STAY SHARP • DOMINATE</p>
+        </footer>
+    </main>
+
+    <script src="rps.js"></script>
+</body>
+</html>
